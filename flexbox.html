@@ -6,22 +6,24 @@
     <title>Document</title>
     <style>
       body {
+        front-family:arial;
         margin: 0;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content:space-between;
         background-color: aqua;
+        height: 100vh;
+
       }
       .header {
         display: flex;
         justify-content: space-between;
-        background-color: blue;
-        height: 100vh;
+        background-color: rgb(131, 202, 60);
+        align-items: center;
+        padding: 20px;
+        
       }
-       .header{
-        display: flex;
-        justify-content: space-between;
-        background-color: rgb(11, 224, 224);
-       }
+      
       .logo {
         font-size: 20px;
         color: beige;
@@ -32,20 +34,55 @@
         gap: 15px;
 
       }
-      .menu-item {
-        color: black;
+      a {
+        color:blueviolet
+      }
+      .nowrap {
+        flex-wrap: nowrap;
+
       }
 
     </style>
 </head>
 <body>
    <div class="header">
-   <div class="logo">Logo</div>
-    <div>
-    <div>Inicio</div>
-    <div>Sobre</div>
-    <div>Contato</div>
+    <div class="logo">Logo</div>
+     <div>Menu</div>
+      <a class="menu-item">Inicio</a>
+      <a>Sobre</a>
+      <a>Contato</a>
     </div>
+  </div>
+   <div class="container">
+     <div class="card">
+      <div class="imgBX">
+        <img src="img/moça.jpg">
+      </a>
+      <h2>Aiel</h2>
+      <p><br>Desenvolvedor Front-end </p>
+      </div>
 
+      <div class="container">
+        <div class="card">
+         <div class="imgBX">
+           <img src="img/bebe.jpg">
+         </a>
+         <h2>Sam</h2>
+         <p><br> Designer UI/UX</p>
+         </div>
+         
+         <div class="container">
+          <div class="card">
+           <div class="imgBX">
+             <img src="img/moço.jpg">
+           </a>
+           <h2>Manu</h2>
+           <p><br>Desenvolvedor Back-end</p>
+           </div> 
+
+
+
+
+  </section>
 </body>
 </html>
