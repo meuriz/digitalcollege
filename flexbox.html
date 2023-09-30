@@ -1,88 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-      body {
-        front-family:arial;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content:space-between;
-        background-color: aqua;
-        height: 100vh;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: aqua;
+      height: 100vh;
 
-      }
-      .header {
-        display: flex;
-        justify-content: space-between;
-        background-color: rgb(131, 202, 60);
-        align-items: center;
-        padding: 20px;
-        
-      }
-      
-      .logo {
-        font-size: 20px;
-        color: beige;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      background-color: rgb(131, 202, 60);
+      align-items: center;
+      padding: 20px;
+
+    }
+
+
+    .logo {
+      font-size: 20px;
+      color: beige;
+
+    }
+
+    .menu {
+      display: flex;
+      gap: 15px;
+
+    }
+
+    a {
+      color: blueviolet
+    }
+
+  
+
+    a:hover {
+      color: lightgray;
+      cursor: pointer;
+    }
+
+    .nowrap {
+      flex-wrap: nowrap;
+
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      padding: 20px;
+      gap: 15px;
+      box-shadow: 0 0 10px;
+      border-radius: 5px;
+      width: 200px;
+
+    }
+    .container {
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      flex: 1;
+      align-items: flex-start;
+      align-content: flex-start;
+    }
     
-      }
-      .menu {
-        display: flex;
-        gap: 15px;
+    h4{
+      margin: 5px 0;
+    }
+    a{
+      color:white;
+      text-decoration: none;
+    }
+    .footer {
+      display: flex;
+      color: white;
+      background-color: rgb(131, 202, 60);
+      justify-content: space-evenly;
+    }
 
-      }
-      a {
-        color:blueviolet
-      }
-      .nowrap {
-        flex-wrap: nowrap;
-
-      }
-
-    </style>
+    .footer-menu {
+      display: flex;
+      align-content: flex-start;
+      flex-direction: column;
+      padding: 20px;
+      gap: 3px;
+    }
+  </style>
 </head>
+
 <body>
-   <div class="header">
+  <div class="header">
     <div class="logo">Logo</div>
-     <div>Menu</div>
-      <a class="menu-item">Inicio</a>
-      <a>Sobre</a>
-      <a>Contato</a>
+    <div class="menu">
+    <a class="menu-item">Inicio</a>
+    <a>Sobre</a>
+    <a>Contato</a>
     </div>
   </div>
-   <div class="container">
-     <div class="card">
-      <div class="imgBX">
-        <img src="img/moça.jpg">
-      </a>
-      <h2>Aiel</h2>
-      <p><br>Desenvolvedor Front-end </p>
-      </div>
-
-      <div class="container">
-        <div class="card">
-         <div class="imgBX">
-           <img src="img/bebe.jpg">
-         </a>
-         <h2>Sam</h2>
-         <p><br> Designer UI/UX</p>
-         </div>
-         
-         <div class="container">
-          <div class="card">
-           <div class="imgBX">
-             <img src="img/moço.jpg">
-           </a>
-           <h2>Manu</h2>
-           <p><br>Desenvolvedor Back-end</p>
-           </div> 
 
 
+  <div class="container">
+    <div class="card">
+      <img src="img/moça.jpg" width="90px" height="90px">
+      <h2>Ariel</h2>
+      <p>Desenvolvedor Front-end</p>
+    </div>
+
+    <div class="card">
+      <img src="img/bebe.jpg" width="90px" height="90px">
+
+      <h2>Sam</h2>
+      <p>Designer UI/UX</p>
+    </div>
 
 
-  </section>
+    <div class="card">
+      <img src="img/moço.jpg" width="90px" height="90px">
+
+      <h2>Manu</h2>
+      <p>Desenvolvedor Back-end</p>
+    </div>
+  </div>
+
+
+ </div>
+   
+     <div class="footer">
+
+      <div class="footer-menu">
+      <h4>Sobre Nós</h4>
+      <a href="#">Quem Somos</a>
+      <a href="#">Missão</a>
+      <a href="#">Visão</a>
+    </div>
+     
+      <div class="footer-menu">
+      <h4>Contato</h4>
+      <a href="#">Email</a>
+      <a href="#">Telefone</a>
+      <a href="#">Localização</a>
+    </div> 
+
+    <div class="footer-menu">
+      <h4>Redes Sociais</h4>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      
+      
+
+      <a 
+      target="_blank"
+      href="#">Instagram</a>
+    </div>
+
+   </div>
+   
+  </div>
+  </div>
+      
+   
+ 
+  
+
+
+
+
 </body>
+
 </html>
