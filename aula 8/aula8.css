@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    height: 100vh;
+
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(131, 202, 60);
+    align-items: center;
+    padding: 20px;
+
+  }
+
+  .logo {
+    font-size: 20px;
+    color: beige;
+
+  }
+
+  .menu {
+    display: flex;
+    gap: 15px;
+
+  }
+
+  a {
+    color: blueviolet
+  }
+
+
+
+  a:hover {
+    color: lightgray;
+    cursor: pointer;
+  }
+
+  .nowrap {
+    flex-wrap: nowrap;
+
+  }
+  .list{
+    flex:1;
+    padding: 20px;
+    gap:20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1rf));
+    align-content: flex-start;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    gap: 15px;
+    box-shadow: 0 0 10px;
+    border-radius: 5px;
+    transition: transform 0.2s;
+
+  }
+  .container {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex: 1;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  
+  h4{
+    margin: 5px 0;
+  }
+  a{
+    color:white;
+    text-decoration: none;
+  }
+  .footer {
+    display: flex;
+    color: white;
+    background-color: rgb(131, 202, 60);
+    justify-content: space-evenly;
+  }
+
+  .footer-menu {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    gap: 3px;
+  }
+
+  
